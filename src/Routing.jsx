@@ -7,6 +7,8 @@ import NewC from './components/form/NewC'
 import Productmain from './components/products/Productmain'
 import Products from './components/products/Products'
 import NewProduct from './components/products/NewProduct'
+import FirstClass from './components/Class/FirstClass'
+import ClassLayout from './components/Class/ClassLayout'
 
 
 const Routing = () => {
@@ -20,6 +22,9 @@ const Routing = () => {
                     <Route path='product' element={<Productmain></Productmain>}></Route>
                     <Route path='productlist' element={<Products></Products>}></Route>
                     <Route path='NewProduct' element={<NewProduct></NewProduct>}></Route>
+                    <Route path='class' element={<ClassLayout></ClassLayout>}>
+                        <Route path='classcomp' element={<FirstClass></FirstClass>}></Route>
+                    </Route>
 
                 </Route>
             </Routes>

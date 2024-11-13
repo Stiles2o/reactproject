@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <div className="container mt-5">
+      <div className="container-fluid mt-5">
         <Outlet></Outlet>
       </div>
       {/* <CreateAcc></CreateAcc> */}

@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap is imported
 import { Link, NavLink } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
 import { FaUser } from 'react-icons/fa6';
-// import './Navbar.css'; // Import custom CSS if you have styles
 
 const Navbar = () => {
     const funlinks = [
@@ -42,6 +41,9 @@ const Navbar = () => {
                                         </React.Fragment>
                                     )}
                                 </ul >
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link" to="class">ClassComp</NavLink>
                             </li>
                         </ul>
                         <NavLink className="nav-link text-white me-4" to="/login" end><FaUser></FaUser></NavLink>
